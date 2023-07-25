@@ -1,0 +1,131 @@
+.body-loginandregister {
+  width: 100%;
+  height: 1000px;
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://i.pinimg.com/originals/0b/3b/11/0b3b1191b2f587bb9b56dd1131d519da.jpg');
+  display: flex;
+  align-items: center; 
+}
+
+.container-loginandregister {
+  max-width: 429px;
+  margin: 0 auto; /* Đặt margin: 0 auto; để căn giữa theo chiều ngang */
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.container-loginandregister h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    padding: 10px;
+    padding-right: 200px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+button {
+    width: 150px;
+    text-align: left;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 10px 80px;
+    width: auto;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+  
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  input:required {
+    border: 1px solid rgb(0, 0, 0);
+  }
+  
+  button:required {
+    border: 1px solid rgb(255, 255, 255);
+  }
+  
+  #recaptcha-container {
+    margin-bottom: 10px;
+  }
+  
+  select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  select::-ms-expand {
+    display: none;
+  }
+  
+  select:hover {
+    border-color: #999;
+  }
+  
+  select:focus {
+    border-color: #4CAF50;
+  }
+  
+  input.valid, select.valid {
+    border-color: #0f0;
+  }
+  
+  input.invalid, select.invalid {
+    border-color: #f00;
+  }
+  
+span.error, span.success {
+    display: none;
+    color: #f00; 
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  input.valid + span.success,
+  select.valid + span.success {
+    display: inline-block;
+    color: #0f0; 
+    margin-left: 5px;
+  }
+  
+  input.invalid + span.error,
+  select.invalid + span.error {
+    display: inline-block;
+    margin-left: 5px; 
+  }

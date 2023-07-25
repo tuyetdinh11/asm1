@@ -1,0 +1,165 @@
+.body-showroom {
+  font-family: 'Times New Roman', Times, serif !important;
+  width: 100%;
+  margin: 0 auto; /* Để căn giữa body trong trình duyệt */
+  padding: 25px 0px; /* Điều chỉnh khoảng cách 25px trên dưới và 20px bên trái phải */
+}
+
+.body-showroom hr {
+  width: 425px;
+  margin-left: 0px;
+}
+
+.header-showroom h1 {
+  margin-top: 125px;
+  color: #181515;
+  letter-spacing: 2px;
+  font-weight: 2000; /* Điều chỉnh độ đậm của chữ */
+  font-size: 40px !important; /* Điều chỉnh kích thước chữ */
+  font-family: 'Times New Roman', sans-serif !important;
+  text-align: center;
+}
+
+.hr-header-showroom{
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin-bottom: 50px;
+}
+
+.container-showroom {
+  display: flex;
+  justify-content: center; /* Để căn giữa các cột trong container */
+  flex-wrap: wrap;
+  margin-left: -24px;
+}
+
+.column-left,
+.column-middle,
+.column-right {
+  flex-basis: 100%; /* Sử dụng flex-basis là 100% cho màn hình nhỏ hơn 768px */
+  margin-bottom: 30px; /* Khoảng cách giữa các hàng */
+  align-self: stretch; /* Để cột cách đều nhau ở cả hai bên trên và dưới */
+  /* text-align: justify; */
+}
+
+@media screen and (min-width: 1000px) {
+  .column-left,
+  .column-middle,
+  .column-right {
+    flex-basis: calc(32.3% - 5px); /* 33.33% với khoảng cách 20px giữa các cột */
+    margin: 5px;
+  }
+}
+
+.car-showroom {
+  width: 100%;
+  margin: 15px;
+  background-color: #ffffff;
+  border-radius: 1px;
+}
+
+.car-showroom img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.car-showroom img:hover {
+  transform: scale(0.95); /* Khi rê chuột vào, làm hình ảnh thu nhỏ lại 10% */
+}
+
+.car-showroom h2 {
+  font-size: 20px;
+  margin: 10px 0; /* Điều chỉnh khoảng cách 10px trên và dưới tiêu đề h2 */
+}
+
+.car-showroom p {
+  margin: 5px 0; /* Điều chỉnh khoảng cách 5px trên và dưới đoạn văn bản p */
+  letter-spacing: 0.5;
+}
+
+.car-showroom button {
+  padding: 5px 10px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.car-showroom button:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.car-showroom .info div {
+  display: flex;
+  align-items: center;
+}
+
+.car-showroom .info div i {
+  margin-right: 10px;
+}
+
+.info-showroom {
+  display: flex;
+  align-items: center;
+}
+
+.info-showroom i {
+  margin-right: 5px;
+}
+
+.car-showroom a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* CSS cho phần lọc */
+.filter-showroom {
+  display: block;
+  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+  -moz-padding-start: calc(0.75rem - 3px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  display: flex;
+  justify-content: center;
+}
+
+/* CSS cho tiêu đề "Sort By" và "Make" */
+.filter-showroom h4 {
+  color: #000;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 20px !important; /* Điều chỉnh kích thước chữ */
+  font-family: 'Montserrat', sans-serif !important;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px;
+  cursor: pointer; /* Thêm hiệu ứng hover khi rê chuột vào */
+}
+
+/* CSS cho các phần select */
+.filter-showroom select {
+  padding: 8px;
+  font-size: 16px;
+  width: 400px;
+  height: 50px;
+  border: 1px solid #000;
+  cursor: pointer; /* Thêm hiệu ứng hover khi rê chuột vào */
+}
+
+/* Hiệu ứng hover cho các phần select */
+.filter-showroom select:hover {
+  border: 2px solid rgba(81, 207, 13, 0.941);
+}
+
+/* CSS cho lựa chọn thứ 2 (Make) */
+.filter select:last-child {
+  margin-left: 1px;
+}

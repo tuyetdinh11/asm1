@@ -1,0 +1,169 @@
+.body-taichinh {
+    margin: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 100px;
+  }
+
+  .header-taichinh {
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif !important;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .menu-taichinh {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0; /* Khoảng cách giữa menu và image */
+  }
+
+  .menu-item-taichinh {
+    font-weight: bold;
+    padding: 0 50px;
+    cursor: pointer;
+    margin: 0 10px; /* Khoảng cách giữa các mục menu */
+    position: relative;
+  }
+
+  .menu-item-taichinh a {
+    text-decoration: none;
+    color: #b7b7b7;
+    transition: color 0.3s;
+  }
+
+  .menu-item-taichinh a:hover {
+    color: #000000;
+  }
+
+  .menu-item-taichinh::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+  }
+
+  .menu-item-taichinh:hover::after {
+    background-color: rgb(0, 0, 0);
+  }
+
+  .image-taichinh {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .image-container-taichinh {
+    width: 100%; /* Chiều ngang bằng kích thước của viewport */
+    max-height: 100%; /* Chiều cao cố định là 350px */
+    overflow: hidden;
+  }
+
+  .image-container-taichinh img {
+    width: 100%;
+    height: 660px;
+    object-fit: cover; /* Đảm bảo tỷ lệ khung hình mà không làm thay đổi chất lượng */
+  }
+
+  .caption-taichinh {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .caption-taichinh p{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif !important;
+  }
+
+  .columns-taichinh {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Khoảng cách giữa các cột */
+  }
+
+  .column-taichinh {
+    flex-basis: 33.33%; /* Chiếm 1/3 không gian của container */
+    margin-bottom: 100px; /* Khoảng cách giữa cột và ảnh cuối */
+  }
+
+  .column-taichinh img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
+
+  .column-taichinh p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    text-align: justify;
+  }
+
+  .footer-taichinh {
+    text-align: center;
+    position: relative; /* Thêm thuộc tính position */
+    padding: 20px 0;
+  }
+
+  .footer-taichinh img{
+      width: 1320px;
+      height: 400px;
+      object-fit: cover;
+  }
+
+  .footer-taichinh .button-container-taichinh {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+  }
+
+  .footer-taichinh .button-container-taichinh a {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  .footer-taichinh .button-container-taichinh a:hover {
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  .footer-taichinh .caption-container-taichinh {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left;
+    width: 33.33%; /* Chiếm 1/3 của container */
+    max-width: 400px; /* Giới hạn chiều rộng của chữ */
+  }
+
+  .footer-taichinh .caption-container-taichinh p{
+    font-size: 26px;
+    letter-spacing: 0.5;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif !important;
+  }
+
+  hr {
+    border: none;
+    background-color: rgb(201, 201, 201);
+    height: 0.4px;
+    opacity: 0.8;
+    width: 1200px;
+  }
+
+  h4{
+    font-size: 25px;
+      text-align: left;
+  }

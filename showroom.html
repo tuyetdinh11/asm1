@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Showroom Supercar</title>
+  <link rel="stylesheet" href="css/showroom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header>
+        <div class="icon-index">
+            <i><a href="https://www.facebook.com/fpt.poly/"class="fa fa-facebook" target="_blank" style="font-size:30px; margin-left: 10px;"></a></i>
+            <i><a href="https://www.youtube.com/c/FPTPoly"class="fa fa-youtube-play" target="_blank"  style="font-size:30px;margin-left: 20px;"></a></i>
+            <i><a href="https://www.instagram.com/fpt_university/"class="fa fa-instagram" target="_blank" style="font-size:30px;margin-left: 20px;"></a></i>
+            <i><a href="https://twitter.com/Phothongcaodang/status/1380344981831872513"class="fa fa-twitter" target="_blank" style="font-size:30px;margin-left: 20px;"></a></i>
+            <i><a href="https://www.amazon.com/"class="fa fa-amazon" target="_blank" style="font-size:30px; margin-left: 20px;"></a></i>
+        </div>
+        <!-- <div class="mail">
+            <a href="#">theboysluxurycars@gmail.com</a>
+        </div> -->
+        <div class="hinh"><a href="#" target="_self"><img src="images/The_boys_Luxury_cars-removebg-preview.png"  alt=""></a></div>
+        <div id="lh">
+            <div class="sdt">
+                <a href="#" class="fa fa-phone">(+84)385572967</a>
+            </div>
+        </div>
+        <div class="logo-1">
+            <a href="#" target="_self"><img src="images/logoweb.png" alt="" width="100" style="margin-right: 20px;"></a>
+        </div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <div class="main">
+        <div class="navbar">
+            <div class="menu">
+              <ul>
+                <li><a href="index.html" target="_self" >Home</a></li>
+                <li><a href="sh">Showroom &#9662</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="#" target="_self">BENTLEY</a></li>
+                            <li><a href="#" target="_self">MCLAREN</a></li>
+                            <li><a href="#" target="_self">FERRARI</a></li>
+                            <li><a href="#" target="_self">MERCEDES-BENZ</a></li>
+                            <li><a href="#" target="_self">LAMBORGHINI</a></li>
+                            <li><a href="#" target="_self">PORSCHE</a></li>
+                            <li><a href="#" target="_self">AUDI</a></li>
+                            <li><a href="#" target="_self">ROLLS ROYCE</a></li>
+                        </ul>
+                    </div>                      
+                </li>
+                <li><a href="#" target="_self">List Cars</a></li>
+                <li><a href="taichinh.html" target="_self">Services &#9662</a>
+                    <div class="dropdown">
+                        <div class="dropdown-content">
+                            <div class="sv">
+                                <ul>
+                                    <li><a href="taichinh.html" target="_self">FINANCE</a></li>
+                                    <li><a href="thanhtoan.html" target="_self">ABATE</a></li>
+                                    <li><a href="baodam.html" target="_self">ENSURE</a></li>
+                                </ul>
+                            </div>
+                        </div>                     
+                    </div> 
+                </li>
+                <li><a href="contact.html" target="_self">Contact</a></li>
+              </ul>
+            </div>
+        </div>
+        <!-- <div class="video-wrap">
+            <video id="intro-video" preload="auto" loop="" autoplay="" playsinline="" muted="" style="width: 100%; height: 100%;  top: -31.2188px; ">
+                <source src="https://previews.customer.envatousercontent.com/h264-video-previews/0bba077c-8294-457d-b520-b8baf9b4cb5b/1059858.mp4" type="video/mp4">
+              </video>
+        </div>     -->
+    </div>
+
+
+
+    <a href="#" class="back-to-top-btn"><i class="fa fa-arrow-up"></i></a>
+
+
+
+
+
+    
+<div class="body-showroom">
+    <div class="hr-header-showroom">
+  <div class="header-showroom">
+    <a href="showroom.html" target="_self"><h1>SHOWROOM SUPERCAR</h1></a>
+  </div>
+</div>
+  <div>
+    <div class="filter-showroom">
+      <h4>Sort By</h4>
+        <select id="sort-order" onchange="filterAndSortProducts()">
+          <option value="high-to-low">High to Low</option>
+          <option value="low-to-high">Low to High</option>
+        </select>
+        <h4>Make</h4>
+        <select id="brand-filter" onchange="filterAndSortProducts()">
+          <option value="all">Show All</option>
+          <option value="Lamborghini">Lamborghini</option>
+          <option value="Ferrari">Ferrari</option>
+          <option value="Porsche">Porsche</option>
+          <option value="Audi">Audi</option>
+          <option value="McLaren">McLaren</option>
+          <option value="Rolls-Royce">Rolls-Royce</option>
+          <option value="Aston Martin">Aston Martin</option>
+        </select>
+      </div>
+      
+      <div class="container-showroom" data-original-products>
+    <div class="column-left">
+    <div class="car-showroom" data-brand="Rolls-Royce" data-price="449995">
+        <a href="ROLLS ROYCE DAWN V12 BLACK BADGE.html"><img src="images/Rolls-Royce Dawn Black Badge/0.webp" alt="Supercar 1"></a>
+        <h2><a href="ROLLS ROYCE DAWN V12 BLACK BADGE.html">ROLLS ROYCE DAWN V12 BLACK BADGE</a></h2>
+        <div>
+          <div>
+            <p>This particular example of the Rolls-Royce Dawn Black Badge was supplied new in April 2022, 22 Registered. Presented to you in Diamond Black featuring Twilight Purple Bonnet,...</p>
+          </div>
+          <button>£449,995</button>
+          <hr>
+          <div class="info-showroom"><i class="fas fa-paint-brush"></i><p>Diamond Black</p></div>
+          <div class="info-showroom"><i class="fas fa-car"></i><p>Tailored Purple</p></div>
+        </div>
+      </div>
+      <div class="car-showroom" data-brand="Aston Martin" data-price="424995">
+        <a href="ASTON MARTIN VANQUISH ZAGATO SHOOTING.html"><img src="images/ASTON MARTIN VANQUISH ZAGATO/ASTON MARTIN VANQUISH ZAGATO SHOOTING.webp" alt="Supercar 2"></a>
+        <h2><a href="ASTON MARTIN VANQUISH ZAGATO SHOOTING.html">ASTON MARTIN VANQUISH ZAGATO</a></h2>
+        <div>
+          <div>
+            <p>The long collaboration between Aston Martin and Zagato has led to some of the most exciting cars ever made. However, few if any are as intriguing or appealing as the Vanquish Zagato Shooting Brake.</p>
+          </div>
+          <button>£424,995</button>
+          <hr>
+          <div class="info-showroom"><i class="fas fa-paint-brush"></i><p>Lava Red Metallic</p></div>
+          <div class="info-showroom"><i class="fas fa-car"></i><p>Pure Black Leather</p></div>
+        </div>
+      </div>
+      <!-- Thêm các sản phẩm xe khác ở đây -->
+      <div class="car-showroom" data-brand="Ferrari" data-price="419995">
+        <a href="Ferrari 812 Superfast GTS.html"><img src="images/Ferrari 812 Superfast GTS/Ferrari 812 Superfast GTS.webp" alt="Supercar 3"></a>
+        <h2><a href="Ferrari 812 Superfast GTS.html">Ferrari 812 Superfast GTS</a></h2>
+        <div>
+          <div>
+            <p>Introducing the awe-inspiring 2022 Ferrari 812 Superfast GTS, now available at Amari Supercars. Dressed in the captivating ... </p>
+          </div>
+          <button>£419,995</button>
+          <hr>
+          <div class="info-showroom"><i class="fas fa-paint-brush"></i><p>Blu Tour De France</p></div>
+          <div class="info-showroom"><i class="fas fa-car"></i><p>Blu Tour De France</p></div>
+        </div>
+    </div>
+    <div class="car-showroom" data-brand="Lamborghini" data-price="399995">
+        <a href="Lamborghini Aventador SV Roadster.html"><img src="images/Lamborghini Aventador SV Roadster/Lamborghini Aventador SV Roadster LP 750-4.webp" alt="Supercar 4"></a>
+        <h2><a href="Lamborghini Aventador SV Roadster.html">Lamborghini Aventador SV Roadster</a></h2>
+        <div>
+          <div>
+            <p>Take your driving experience to the next level with this rare and stunning Lamborghini Aventador SV Roadster. With only 3 owners from new and…</p>
+          </div>
+          <button>£399,995</button>
+          <hr>
+          <div class="info-showroom"><i class="fas fa-paint-brush"></i><p>Nero Aldebaran</p></div>
+          <div class="info-showroom"><i class="fas fa-car"></i><p>Nero w/ Rosso Alala</p></div>
+        </div>
+      </div>
+      
+      <div class="car-showroom" data-brand="Aston Martin" data-price="399995">
+        <a href="Aston Martin Vanquish Zagato.html"><img src="images/ASTON MARTIN VANQUISH ZAGATO VOLANTE V12/Aston Martin Vanquish Zagato Volante V12.webp" alt="Supercar 5"></a>
+        <h2><a href="Aston Martin Vanquish Zagato.html">Aston Martin Vanquish Zagato</a></h2>
+        <div>
+          <div>
+            <p>Introducing the Aston Martin Vanquish Zagato Volante, a remarkable masterpiece brought to you by the enduring and legendary partnership between…</p>
+          </div>
+          <button>£399,995</button>
+          <hr>
+          <div class="info-showroom"><i class="fas fa-paint-brush"></i><p> Black</p></div>
+          <div class="info-showroom"><i class="fas fa-car"></i><p>Black and Mandarin Leather</p></div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+       <div class="column-middle">
+      <div class="car-showroom" data-brand="McLaren" data-price="379995">
+        <a href="McLaren 765LT V8.html"><img src="images/MCLAREN 765LT V8/McLaren 765LT.webp" alt="Supercar 6"></a>
+        <h2><a href="McLaren 765LT V8.html">McLaren 765LT V8</a></h2>
+        <div>
+          <div>
+            <p>This McLaren 765LT in Elite Paint Ember Orange is a remarkable supercar with unparalleled performance and striking visual appeal. This 765LT…</p>
+          </div>
+          <button>£379,995</button>
+          <hr>
+          <div class="info-showroom"><i class="fas fa-paint-brush"></i><p>Elite Paint Ember Orange</p></div>
+          <div class="info-showroom"><i class="fas fa-car"></i><p>Nero Hide and Alcantara</p></div>
+        </div>
+      </div>
+      
+      <div class="car-showroom" data-brand="Ferrari" data-price="359995">
+        <a href="Ferrari 812 Superfast.html"><img src="images/FERRARI 812 SUPERFAST/Ferrari 812 Superfast.webp" alt="Supercar 7"></a>
+        <h2><a href="Ferrari 812 Superfast.html">Ferrari 812 Superfast</a></h2>
+        <div>
+          <div>
+            <p>Introducing the captivating 2020 Ferrari 812 Superfast, available now at Amari Supercars. This sleek beauty commands attention with its stunning…</p>
+          </div>
+          <button>$£359,995</button>
+          <hr>
+          <div class="info-showroom"><i class="fas fa-paint-brush"></i><p>Nero Daytona</p></div>
+          <div class="info-showroom"><i class="fas fa-car"></i><p>Nero Hide</p></div>
+        </div>
+      </div>
+      
+      <div class="car-showroom" data-brand="Ferrari" data-price="359995">
+        <a href="Ferrari SF90 Stradale.html"><img src="images/FERRARI SF90 STRADALE/Ferrari SF90 Stradale.webp" alt="Supercar 8"></a>
+        <h2><a href="Ferrari SF90 Stradale.html">Ferrari SF90 Stradale</a></h2>
+        <div>
+          <div>
+            <p>Introducing our Ferrari SF90. This vehicle is July 2021 21 Registered. Finished in the Iconic "Grigio Silverstone", this car has covered just…</p>
+          </div>
+          <button>£359,995</button>
+          <hr>
+          <div class="info-showroom"><i class="fas fa-paint-brush"></i><p>Grigio Silverstone</p></div>
+          <div class="info-showroom"><i class="fas fa-car"></i><p>Nero</p></div>
+        </div>
+      </div>
+      
+      <div class="car-showroom" data-brand="Rolls-Royce" data-price="339995">
+        <a href="#"><img src="images/Rolls Royce Ghost Black Badge/Rolls-Royce Ghost Black Badge.webp" alt="Supercar 9"></a>
+        <h2><a href="">Rolls Royce Ghost Black Badge</a></h2>
+        <div>
+          <div>
+            <p>The 2022 Rolls-Royce Ghost Black Badge is a true masterpiece of engineering and design, representing the pinnacle of luxury and performance.….</p>
+          </div>
+          <button>£339,995</button>
+          <hr>
+          <div class="info-showroom"><i class="fas fa-paint-brush"></i><p>Twilight Purple</p></div>
+          <div class="info-showroom"><i class="fas fa-car"></i><p>Black with Tailored Purple</p></div>
+        </div>
+      </div>
+      
+      <div class="car-showroom" data-brand="Ferrari" data-price="304995">
+        <a href="#"><img src="images/Ferrari 488 Pista/Ferrari 488 Pista.webp" alt="Supercar 10"></a>
+        <h2><a href="">Ferrari 488 Pista</a></h2>
+        <div>
+          <div>
+            <p>This particular example of the Ferrari 488 Pista was supplied new to the UK in May 2020, 20 Registered. This vehicle is an Atelier Car. Finished…</p>
+          </div>
+          <button>£304,995</button>
+          <hr>
+          <div class="info-showroom"><i class="fas fa-paint-brush"></i><p>Alluminio Lucido</p></div>
+          <div class="info-showroom"><i class="fas fa-car"></i><p>Blu Scuro Alcantara</p></div>
+        </div>
+      </div>
+    </div>
+      
+
+
+
+
+    <div class="column-right">
+      <div class="car-showroom" data-brand="Mercedes-Benz" data-price="249995">
+        <a href="#"><img src="images/Mercedes-Benz AMG G 63 HOFELE/Mercedes-Benz AMG G 63 HOFELE.webp" alt="Supercar 11"></a>
+        <h2><a href="">Mercedes-Benz AMG G 63 HOFELE</a></h2>
+        <div>
+          <div>
+            <p>This Mercedes G63, is the epitome of rugged luxury, it has received a bespoke transformation at the skilled hands of HOFELE, renowned for their…</p>
+          </div>
+          <button>£249,995</button>
+          <hr>
+          <div class="info-showroom"><i class="fas fa-paint-brush"></i><p>Obsidian Black Metallic and Grey</p></div>
+          <div class="info-showroom"><i class="fas fa-car"></i><p>Leather Interior by HOFELE</p></div>
+        </div>
+      </div>
+      
+      <div class="car-showroom" data-brand="Porsche" data-price="234995">
+        <a href="#"><img src="images/Porsche 911 991 GT3 Touring Manual/Porsche 911 991 GT3 Touring Manual.webp" alt="Supercar 12"></a>
+        <h2><a href="">Porsche 911 991 GT3 Touring Manual</a></h2>
+        <div>
+          <div>
+            <p>Amari Supercars is proud to present an exceptional offering in the form of a 2018 Porsche 911 (991) GT3 Touring Manual. This particular model…</p>
+          </div>
+          <button>£234,995</button>
+          <hr>
+          <div class="info-showroom"><i class="fas fa-paint-brush"></i><p>Jet Black Metallic</p></div>
+          <div class="info-showroom"><i class="fas fa-car"></i><p>Black Leather and Alcantara</p></div>
+        </div>
+      </div>
+      
+      <div class="car-showroom" data-brand="Ferrari" data-price="289995">
+        <a href="#"><img src="images/Ferrari 296 GTB/Ferrari 296 GTB.webp" alt="Supercar 13"></a>
+        <h2><a href="">Ferrari 296 GTB</a></h2>
+        <div>
+          <div>
+            <p>Introducing our Ferrari 296 GTB. This vehicle was registered in November 2022 and has covered just ...</p>
+          </div>
+          <button>£289,995</button>
+          <hr>
+          <div class="info-showroom"><i class="fas fa-paint-brush"></i><p>Rosso Corsa</p></div>
+          <div class="info-showroom"><i class="fas fa-car"></i><p>Nero Hide and Alcantara</p></div>
+        </div>
+      </div>
+      
+      <div class="car-showroom" data-brand="Lamborghini" data-price="299995">
+        <a href="#"><img src="images/LAMBORGHINI URUS S/LAMBORGHINI URUS S.webp" alt="Supercar 14"></a>
+        <h2><a href="">Lamborghini Urus S</a></h2>
+        <div>
+          <div>
+            <p>Introducing the Lamborghini Urus S, the epitome of raw power and unmatched luxury.This extraordinary SUV combines the aggressive styling and…</p>
+          </div>
+          <button>£299,995 - Deposit Taken</button>
+          <hr>
+          <div class="info-showroom"><i class="fas fa-paint-brush"></i><p>Nero</p></div>
+          <div class="info-showroom"><i class="fas fa-car"></i><p>Nero Alcantara</p></div>
+        </div>
+      </div>
+      
+      <div class="car-showroom" data-brand="Lamborghini" data-price="267495">
+        <a href="#"><img src="images/Lamborghini Huracan LP640-2 Tecnica/Lamborghini Huracan LP640-2 Tecnica.webp" alt="Supercar 15"></a>
+        <h2><a href="">Lamborghini Huracan LP640-2 Tecnica</a></h2>
+        <div>
+          <div>
+            <p>Amari is proud to present this a stunning 2023 Lamborghini Huracan Tecnica in the sleek and sophisticated Grigio Keres exterior color. This exceptional…</p>
+          </div>
+          <button>£267,495</button>
+          <hr>
+          <div class="info-showroom"><i class="fas fa-paint-brush"></i><p>Grigio Keres</p></div>
+          <div class="info-showroom"><i class="fas fa-car"></i><p>Nero Alcantara</p></div>
+        </div>
+      </div>
+    </div>
+      
+
+
+
+
+
+      <!--<div class="car" data-brand="Porsche" data-price="259995">
+        <a href="#"><img src="images/Porsche 911 992 Carrera 4S/Porsche 911 992 Carrera 4S.webp" alt="Supercar 16"></a>
+        <h2><a href="">Porsche 911 992 Carrera 4S</a></h2>
+        <div>
+          <div>
+            <p>The Porsche 911 992 Carrera 4S is a true icon in the world of high-performance sports cars. This stunning example comes in the vibrant and eye-catching…</p>
+          </div>
+          <button>£259,995</button>
+          <hr>
+          <div class="info"><i class="fas fa-paint-brush"></i><p>Carmine Red</p></div>
+          <div class="info"><i class="fas fa-car"></i><p>Black and Crayon Leather</p></div>
+        </div>
+      </div>
+      
+      <div class="car" data-brand="Lamborghini" data-price="249995">
+        <a href="#"><img src="images/Lamborghini Gallardo LP570-4 Performante Edizione Tecnica/Lamborghini Gallardo LP570-4 Performante Edizione Tecnica.webp" alt="Supercar 17"></a>
+        <h2><a href="">Lamborghini Gallardo LP570-4 Performante Edizione Tecnica</a></h2>
+        <div>
+          <div>
+            <p>Amari is thrilled to offer this 2014/64 Lamborghini Gallardo LP570-4 Performante Edizione Tecnica. This particular Gallardo comes in a chic and…</p>
+          </div>
+          <button>£249,995</button>
+          <hr>
+          <div class="info"><i class="fas fa-paint-brush"></i><p>Bianco Monocerus</p></div>
+          <div class="info"><i class="fas fa-car"></i><p>Nero Alcantara with Arancio Leonis Contrast Stitching</p></div>
+        </div>
+      </div>
+       ... Tiếp tục thêm sản phẩm xe khác (nếu cần) ... -->
+      
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+  <footer id="footer" class="footer" itemscope="" itemtype="http://schema.org/ContactPoint">
+    <div class="container-footer">
+        <div class="row">
+          <div class="col-lg-8"> 
+            <div class="row">
+              <div class="col-md-7">
+                <div class="aside">
+                  <div>
+                    <h4 class="footer-heading">SHOWROOM</h4>
+                    <div class="heading-block"></div>
+                    <ul class="list-unstyled">
+                        <li><a href="#" target="_self">BENTLEY</a></li>
+                        <li><a href="#" target="_self">MCLAREN</a></li>
+                        <li><a href="#" target="_self">FERRARI</a></li>
+                        <li><a href="#" target="_self">MERCEDES-BENZ</a></li>
+                        <li><a href="#" target="_self">LAMBORGHINI</a></li>
+                        <li><a href="#" target="_self">PORSCHE</a></li>
+                        <li><a href="#" target="_self">AUDI</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            <div class="col-md-6">
+              <div class="aside">
+                <div>
+                  <h4 class="footer-heading">CONTACT</h4>
+                  <div class="heading-block"></div>
+                  <ul class="list-unstyled">
+                    <li><a href="contact.html" target="_self">How To Find Us</a></li>
+                    <li><strong>T</strong> <a href="tel:(+84)385572967">(+84)385572967</a></li>
+                    <li><strong>E</strong> <a href="mailto:sales@theboysluxurycars.com.vn">sales@theboysluxurycars.com.vn</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="aside">
+                <div>
+                  <h4 class="footer-heading">Services</h4>
+                  <div class="heading-block"></div>
+                  <ul class="list-unstyled">
+                    <li><a href="taichinh.html" target="_self">FINANCE</a></li>
+                    <li><a href="thanhtoan.html" target="_self">ABATE</a></li>
+                    <li><a href="baodam.html" target="_self">ENSURE</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="logo">
+            <a href="#"><img src="images/logoweb.png" alt="The_boys_Luxury_cars" data-was-processed="true"></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="icon-footer">
+        <i><a href="https://www.facebook.com/fpt.poly/"class="fa fa-facebook" target="_blank" style="font-size:30px; margin-left: 10px;"></a></i>
+        <i><a href="https://www.youtube.com/c/FPTPoly"class="fa fa-youtube-play" target="_blank"  style="font-size:30px;margin-left: 20px;"></a></i>
+        <i><a href="https://www.instagram.com/fpt_university/"class="fa fa-instagram" target="_blank" style="font-size:30px;margin-left: 20px;"></a></i>
+        <i><a href="https://twitter.com/Phothongcaodang/status/1380344981831872513"class="fa fa-twitter" target="_blank" style="font-size:30px;margin-left: 20px;"></a></i>
+        <i><a href="https://www.amazon.com/"class="fa fa-amazon" target="_blank" style="font-size:30px; margin-left: 20px;"></a></i>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+        <div class="col-md-1">
+            <div class="aside">
+                <div>
+                    <p>© 2023 The_boys_Luxury_cars™ Lifestyle Ltd. T/A The_boys_Luxury_cars™ Supercars.</p>
+                    <p>Số của công ty đã đăng ký: <strong style=" color: #ffffff;">(+84)385572967</strong> </p>
+                        </div>
+                    </div>
+                    </div>
+        <div class="col-md-2">
+            <div class="aside">
+                <div>
+                    <div><a href="T và C.html" target="_self"> Terms & Conditions </a> | <a href="csbm.html" target="_self"> Privacy Policy </a> | <a href="contact.html" target="_self"> Contact Us </a> | <a href="index.html" target="_self"> Site by <span style="  font-style: italic; font-weight: bold;"> The_boys_Luxury_cars</span> </a></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="chu">
+            <p>Tuyên bố từ chối trách nhiệm: Chúng tôi rất cẩn thận để đảm bảo thông số kỹ thuật hiển thị cho mỗi chiếc xe là chính xác, tuy nhiên do cách dữ liệu được chuyển từ các nguồn của bên thứ ba theo thời gian, lỗi có thể xảy ra. <strong style="color: #ffffff;">The_boys_Luxury_cars Lifestyle Ltd</strong> không chịu trách nhiệm hoặc trách nhiệm pháp lý đối với những lỗi như vậy trong danh sách và chúng tôi khuyên bạn nên kiểm tra toàn bộ chi tiết xe một cách độc lập trước khi mua.</p>
+        </div>
+    </div>                
+    </footer>
+    <script src="js/showroom.js"></script>
+</body>
+</html>

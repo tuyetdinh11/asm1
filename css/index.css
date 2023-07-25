@@ -1,0 +1,595 @@
+@media all and (min-width: 500px) and (max-width: 8000px) {
+    body {
+        width: 100%;
+        height: 1500px;
+        margin: 0;
+        font-family: 'Times New Roman', Times, serif !important;
+    }
+}
+
+@import url(index.css) screen and (max-width: 1900px);
+
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    position: fixed;
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+    width: 100%;
+}
+
+header .hinh {
+    /* text-align: center; */
+    margin: 0 auto;
+    margin-right: 110px;
+    height: 70px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.hinh {
+    margin: 0;
+    color: #f8f8bc;
+    text-align: center;
+}
+
+#lh {
+    background-color: transparent;
+    margin-right: 80px;
+    margin-top: 18px;
+    color: initial;
+    border: 2px solid #76767675;
+    width: 160px;
+    height: 32px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#lh:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sdt a {
+    line-height: 32px;
+    text-align: center;
+    width: 160px;
+    height: 33px;
+    border-radius: 20px;
+    color: #f8f8bc;
+    text-decoration: none;
+}
+
+.sdt a:hover {
+    background-color: rgba(173, 173, 173, 0.545);
+    color: #f8f8bc;
+}
+
+.icon-index {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    margin: 0 auto;
+    margin-left: 25px;
+}
+
+.icon-index a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+    width: 30px;
+    height: 40px;
+    background-size: cover;
+    text-decoration: none;
+}
+
+.icon-index i {
+    background-color: transparent;
+    color: initial;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+/* .icons i:hover {
+    color: #e67e22;
+} */
+
+.fa-facebook {
+    display: inline-block;
+    color: #3f63b3;
+    /* background-image: url(path/to/facebook-icon.png); */
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+.fa-facebook:hover {
+    transform: scale(1.2);
+}
+
+.fa-youtube-play {
+    display: inline-block;
+    color: #ff0000;
+    /* background-image: url(path/to/youtube-icon.png); */
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+.fa-youtube-play:hover {
+    transform: scale(1.2);
+}
+
+.fa-instagram {
+    display: inline-block;
+    color: #8A3AB9;
+    /* background-image: url(path/to/instagram-icon.png); */
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+.fa-instagram:hover {
+    transform: scale(1.2);
+}
+
+.fa-twitter {
+    display: inline-block;
+    color: #1DA1F2;
+    /* background-image: url(path/to/twitter-icon.png); */
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+.fa-twitter:hover {
+    transform: scale(1.2);
+}
+
+.fa-amazon {
+    display: inline-block;
+    color: #ffffff;
+    /* background-image: url(path/to/amazon-icon.png); */
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+.fa-amazon:hover {
+    transform: scale(1.2);
+}
+
+/* .mail {
+    margin-left: 25px;
+}
+
+.mail a {
+    text-decoration: none;
+    color: #f1c40f;
+}
+
+.mail a:hover {
+    color: #e67e22;
+} */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 50px;
+    z-index: 2;
+    top: 90px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.sticky {
+    top: -70px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    margin: 15px 10px;
+    position: relative;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #f8f8bc;
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    font-family: 'Times New Roman', Times, serif !important;
+    margin-left: 20px;
+    display: block;
+    white-space: nowrap; /* Giữ chữ trên cùng một dòng */
+}
+
+.menu li a:hover {
+    transform: scale(1.2);
+    color: rgb(255, 255, 255);
+}
+
+.dropdown {
+    display: block;
+    position: absolute;
+    background-color: #000;
+    min-width: 200px;
+    z-index: 1;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s ease;
+    left: 28%;
+    transform: translateX(-36%);
+}
+
+.menu li:hover .dropdown {
+    height: 70px;
+    /* Đặt chiều cao phù hợp với nội dung của menu con */
+}
+
+.dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown li {
+    padding: 10px 25px 10px 25px ;
+}
+
+.dropdown a {
+    color: #f8f8bc;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+/* .dropdown a:hover {
+    color: #00ff2a;
+} */
+
+li:hover .dropdown {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown li a {
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif !important;
+    /* Đặt kích thước chữ phù hợp với ý muốn của bạn */
+}
+
+.dropdown li a:hover {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    /* Đặt kích thước chữ khi chuột hover vào menu con */
+}
+
+
+.video-wrap {
+    overflow: hidden;
+    width: 100%;
+    max-height: 800px;
+    position: relative;
+    direction: ltr;
+}
+
+.video-wrap video {
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    width: 100%;
+    transition: opacity .3s 1s ease;
+}
+
+.logo-1{
+    margin-right: 25px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #d7d7d7; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  .back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #000000;
+    color: #f8f8bc;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    z-index: 999;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.back-to-top-btn:hover {
+    opacity: 1;
+}
+
+::selection {
+    background-color: rgba(192, 235, 199, 0.64);
+  }
+
+.newcar h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.supercar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.supercar {
+    flex-grow: 2;
+    flex-basis: 0;
+    flex-direction: column;
+    display: flex;
+    text-align: justify;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.supercar img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.supercar h3 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: color 0.2s ease;
+}
+
+.supercar h4 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    font-family:'Arial','Times New Roman',monospace;
+}
+
+.supercar p {
+    flex: 1;
+    margin: 10px 0;
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+.supercar .price-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 10px;
+    width: 100%;
+    transition: color 0.2s ease;
+}
+
+.price-container>div {
+    width: 50%;
+}
+
+.price-container h3 {
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+}
+
+.price2::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    height: 1px;
+    background-color: black;
+}
+
+.supercar:hover img {
+    opacity: 0.8;
+}
+
+.goto-showroom {
+    margin-top: 80px;
+    width: 150px;
+    margin-left: 37.8%;
+}
+
+.goto-s button {
+    background-color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    border: 3px solid #000000;
+    background-color: #00000099;
+    color: #ffffff;
+    padding: 10px 80px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    height: 55px;
+}
+
+.goto-s button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+.hr-supercar {
+    max-width: 400px;
+}
+
+.supercar-background {
+    background-image: url('https://th.bing.com/th/id/R.4a39b04ff4e40e9739d789412d85478e?rik=EwshwsiS3JZxLQ&riu=http%3a%2f%2fimg.xcitefun.net%2fusers%2f2014%2f01%2f349618%2cxcitefun-lamaserati-hyper-car-1.jpg&ehk=z2zMPgtweSrr6eMrxlcqidV27%2baK%2fc46ecxKNLT%2ff4Y%3d&risl=&pid=ImgRaw&r=0');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+    color: white;
+    margin-top: 50px;
+    font-size: 25px;
+    background-blend-mode:overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.supercar-background h2 {
+    text-shadow: 2px 2px 4px rgb(160, 160, 160);
+}
+
+.supercar-background h3 {
+    margin-top: 20px;
+}
+
+.goto-contact {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.goto-c button {
+    background-color: transparent;
+    font-weight: bold;
+    border: 3px solid white;
+    color: white;
+    padding: 10px 50px;
+    width: auto;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    height: 55px;
+}
+
+.goto-c button:hover {
+    background-color: white;
+    color: black;
+}
+
+a .car-for-sale {
+    background-image: url('https://th.bing.com/th/id/R.23282dbfb0f8cc0c645e7b7214fc9ed4?rik=WkqvMDEnCzHU5A&riu=http%3a%2f%2fhdqwalls.com%2fwallpapers%2flamborghini-gallardo.jpg&ehk=Znyfpejx6PIN8me3YnL3SCmZ1u70oMhDlt5ODABEMaw%3d&risl=1&pid=ImgRaw&r=0');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+    color: white;
+    margin-top: -19px;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+a .car-for-sale h1 {
+    text-shadow: 5px 5px 5px rgba(255, 0, 0, 0.379);
+    transition: font-size 10s ease;
+    font-size: 30px;
+    font-family:sans-serif;
+}
+
+a .car-for-sale:hover h1 {
+    font-size: 50px;
+}
+
+h6 {
+    margin-top: -23px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: rgb(130, 130, 130)
+}
+
+.newsletter {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.login-signup {
+    margin-top: 80px;
+    width: 150px;
+    margin-left: 42%;
+}
+
+.login-button button {
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 10px 80px;
+    width: auto;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    height: 55px;
+    margin-bottom: 60px;
+    margin-top: -70px;
+    margin-left: -108px;
+    transition: 1s ease-out;
+}
+
+.login-button button:hover {
+    background-color: white;
+    color: black;
+}
+

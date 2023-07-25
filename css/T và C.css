@@ -1,0 +1,44 @@
+h6{
+    font-size: 18px;
+}
+
+h5{
+    font-size: 18px;
+}
+
+p{
+    font-size: 15px;
+}
+
+hr{
+    border: none; 
+    background-color: rgb(201, 201, 201); 
+    height: 0.4px; 
+    opacity: 0.8;
+}
+
+h1 {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 160px;
+  }
+
+h3{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.container-TC{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    margin-left: 110px;
+    margin-right: 110px;
+    letter-spacing: 0.3px;
+    line-height: 1.75;
+}
+
+.form{
+    text-align: justify;
+}

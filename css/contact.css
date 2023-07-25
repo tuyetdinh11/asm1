@@ -1,0 +1,114 @@
+
+  #contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+  }
+
+  #contact-header {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px auto;
+  }
+
+  #map-container-contact {
+    width: 100%;
+    height: 450px;
+    background-color: lightgray;
+  }
+
+  #map {
+    height: calc(100vh - 150px);
+    width: 100%;
+  }
+
+  #form-container-contact {
+    display: flex;
+    width: 100%;
+  }
+
+  #form-container-contact .column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  #form-container-contact .column a{
+    color: black;
+    text-decoration: none;
+  }
+
+  #form-container-contact .column:first-child {
+    background-color: rgb(255, 255, 255);
+    border-right: 1px solid gray;
+  }
+
+  #form-container-contact .column:last-child {
+    text-align: left;
+  }
+
+  #form-container-contact .column:last-child p{
+      margin-top: 5px;
+      font-size: 18px;
+      letter-spacing: 0.5px;
+  }
+
+  #form-container-contact p {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  #form-container-contact input,
+  #form-container-contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  #form-container-contact textarea {
+    height: 230px;
+  }
+
+  #form-container-contact button {
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 0.1px solid rgb(161, 161, 161);
+    cursor: pointer;
+  }
+
+  #form-container-contact button:hover {
+    background-color: #000000;
+  }
+
+  #form-container-contact button:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  #address-container-contact {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #address-container-contact p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
+
+ .hinh-1{
+      width: 100%;
+  }
+  h2{
+      font-size: 35px;
+      border: none;
+      border-bottom: 1px solid black;
+      width:365px;
+  }
+

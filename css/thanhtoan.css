@@ -1,0 +1,135 @@
+.header-thanhtoan {
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif !important;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 100px;
+  }
+
+  .menu-thanhtoan {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0; /* Khoảng cách giữa menu và image */
+  }
+
+  .menu-item-thanhtoan {
+    font-weight: bold;
+    padding: 0 50px;
+    cursor: pointer;
+    margin: 0 10px; /* Khoảng cách giữa các mục menu */
+    position: relative;
+  }
+
+  .menu-item-thanhtoan a {
+    text-decoration: none;
+    color: #b7b7b7;
+    transition: color 0.3s;
+  }
+
+  .menu-item-thanhtoan a:hover {
+    color: #000000;
+  }
+
+  .menu-item-thanhtoan::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+  }
+
+  .menu-item-thanhtoan:hover::after {
+    background-color: rgb(0, 0, 0);
+  }
+
+  .image-thanhtoan {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .image-container-thanhtoan {
+    width: 100%; /* Chiều ngang bằng kích thước của viewport */
+    max-height: 100%; /* Chiều cao cố định là 350px */
+    overflow: hidden;
+  }
+
+  .image-container-thanhtoan img {
+    width: 100%;
+    max-height: 660px;
+    object-fit: cover; /* Đảm bảo tỷ lệ khung hình mà không làm thay đổi chất lượng */
+  }
+
+  .caption-thanhtoan {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .caption-thanhtoan p{
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif !important;
+  }
+
+  .row-thanhtoan {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column-thanhtoan {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.right-column-content-thanhtoan {
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    text-align: justify;
+}
+
+.image-container-thanhtoan2 {
+    text-align: center;
+}
+
+.image-container-thanhtoan2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.caption-thanhtoan {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button-thanhtoan {
+    margin-top: 80px;
+    width: 150px;
+    text-align: left;
+}
+
+.button-thanhtoan button {
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 10px 80px;
+    width: auto;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.button-thanhtoan button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
